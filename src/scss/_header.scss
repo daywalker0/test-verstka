@@ -1,0 +1,37 @@
+.header {
+  &__container {
+    display: flex;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    cursor: pointer;
+  }
+  &__control-panel {
+    display: flex;
+    align-items: center;
+    &_name {
+      @include font(Gilroy, 600, 14px, 106%, #2f2f2f);
+      margin: 0 6px 0 11px;
+    }
+  }
+}
+
+.colocol {
+  cursor: pointer;
+  position: relative;
+  &::before {
+    @include pseudo;
+    @include br(100%);
+    width: 5px;
+    height: 5px;
+    right: -2px;
+    top: -5px;
+    background-color: #ef5da8;
+  }
+}
+
+.avatar {
+  cursor: pointer;
+}

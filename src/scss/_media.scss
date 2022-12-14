@@ -1,0 +1,161 @@
+/* Desktop */
+@media all and (max-width: 1920px) {
+}
+
+@media all and (max-width: 1600px) {
+}
+
+/* Laptop L   1440px */
+@media all and (max-width: 1440px) {
+  .footer {
+    &__container {
+      max-width: 1121px;
+    }
+  }
+}
+
+/*            1200px */
+@media all and (max-width: 1200px) {
+}
+
+/* Laptop *   1024px */
+@media all and (max-width: 1024px) {
+  .main-content__top {
+    display: block;
+  }
+  .info {
+    margin-bottom: 20px;
+  }
+  .layer-1 {
+    position: relative;
+  }
+  .diagramma {
+    left: 30%;
+  }
+  .info__main_tag-list {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet *   768px */
+@media all and (max-width: 768px) {
+  [class*="__container"] {
+    padding: 0 30px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main__main-content {
+    margin: 0;
+  }
+  .diagramma {
+    left: 33%;
+  }
+  .table__title {
+    padding: 0 10px;
+  }
+  .footer__container {
+    padding: 44px 30px 0 30px;
+  }
+  .main__list {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .privacy__list {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+  .header__control-panel_name {
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .hamb {
+    display: block;
+    &__field {
+    }
+  }
+  .bar {
+  }
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #000;
+    transition: 0.2s;
+  }
+  .active {
+    display: block;
+    width: 92%;
+    position: absolute;
+    z-index: 9;
+  }
+}
+
+/*            575px */
+@media all and (max-width: 575px) {
+  .diagramma {
+    left: 26%;
+  }
+  .info__footer_memory-line span {
+    display: none;
+  }
+  .table {
+    td:nth-child(1) {
+      padding: 10px;
+    }
+    tr:nth-child(1) > td:nth-child(1) {
+      font-size: 16px;
+    }
+  }
+  .active {
+    width: 87%;
+  }
+}
+
+/* Mobile L   425px */
+@media all and (max-width: 425px) {
+  .diagramma {
+    left: 15%;
+  }
+  .table {
+    display: none;
+  }
+  .active {
+    width: 86%;
+  }
+}
+
+/* Mobile M   375px */
+@media all and (max-width: 375px) {
+  .diagramma {
+    left: 7%;
+  }
+}
+/* Mobile S   320px */
+@media all and (max-width: 325px) {
+  .info__footer_memory-line {
+    display: none;
+  }
+  .diagramma {
+    left: -1%;
+  }
+  .footer__soc-list {
+    display: none;
+  }
+  .active {
+    width: 81%;
+  }
+}

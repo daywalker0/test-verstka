@@ -287,6 +287,10 @@ body {
   }
 }
 
+.layer {
+  position: relative;
+}
+
 .diagramma {
   width: 100%;
   position: relative;
@@ -300,6 +304,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    .layer-1__modal {
+      transition: 0.9s;
+      display: block;
+    }
+  }
+  &__modal {
+    display: none;
+    padding: 10px 20px;
+    background-color: #383838;
+    @include br(7px);
+    color: #fff;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.3s;
+    z-index: 9;
+    width: 90px;
+    height: 32px;
+    @include font(Gilroy, 400, 8px, 134%, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      right: 40px;
+      border-left: 1px solid #383838;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background: linear-gradient(
+        45deg,
+        #383838 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+  }
   &__outer {
     animation: xxx 3s linear 1 forwards;
     background-color: #dddddd;
@@ -330,6 +373,46 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  &:hover {
+    .layer-2__modal {
+      transition: 0.9s;
+      display: block;
+    }
+  }
+  &__modal {
+    display: none;
+    padding: 10px 20px;
+    background-color: #383838;
+    @include br(7px);
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    transition: 0.3s;
+    z-index: 9;
+    width: 90px;
+    height: 32px;
+    @include font(Gilroy, 400, 8px, 134%, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      right: 40px;
+      border-left: 1px solid #383838;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background: linear-gradient(
+        45deg,
+        #383838 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+  }
   &__outer {
     animation: xxx 3s linear 1 forwards;
     background-color: #5d5fef;
@@ -360,6 +443,46 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  &:hover {
+    .layer-3__modal {
+      transition: 0.9s;
+      display: block;
+    }
+  }
+  &__modal {
+    display: none;
+    padding: 10px 20px;
+    background-color: #383838;
+    @include br(7px);
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.3s;
+    right: 10px;
+    z-index: 9;
+    width: 90px;
+    height: 32px;
+    @include font(Gilroy, 400, 8px, 134%, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      right: 40px;
+      border-left: 1px solid #383838;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background: linear-gradient(
+        45deg,
+        #383838 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+  }
   &__outer {
     animation: xxx 3s linear 1 forwards;
     background-color: #3ac39f;
@@ -390,6 +513,46 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  &:hover {
+    .layer-4__modal {
+      transition: 0.9s;
+      display: block;
+    }
+  }
+  &__modal {
+    display: none;
+    padding: 10px 20px;
+    background-color: #383838;
+    @include br(7px);
+    color: #fff;
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    transition: 0.3s;
+    z-index: 9;
+    width: 90px;
+    height: 32px;
+    @include font(Gilroy, 400, 8px, 134%, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      right: 40px;
+      border-left: 1px solid #383838;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background: linear-gradient(
+        45deg,
+        #383838 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+  }
   &__outer {
     animation: xxx4 3s linear 1 forwards;
     background-color: #f178b6;
@@ -420,6 +583,47 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  &:hover {
+    .layer-5__modal {
+      transition: 0.9s;
+      display: block;
+    }
+  }
+  &__modal {
+    display: none;
+    padding: 10px 20px;
+    background-color: #383838;
+    @include br(7px);
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: -20px;
+    transition: 0.3s;
+    z-index: 9;
+    width: 90px;
+    height: 32px;
+    @include font(Gilroy, 400, 8px, 134%, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.9s;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      right: 40px;
+      border-left: 1px solid #383838;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background: linear-gradient(
+        45deg,
+        #383838 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+  }
   &__outer {
     animation: xxx 3s linear 1 forwards;
     background-color: #a5a6f6;

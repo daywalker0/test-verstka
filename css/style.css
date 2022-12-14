@@ -538,6 +538,10 @@ body {
   color: #717171;
 }
 
+.layer {
+  position: relative;
+}
+
 .diagramma {
   width: 100%;
   position: relative;
@@ -557,6 +561,52 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.layer-1:hover .layer-1__modal {
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  display: block;
+}
+
+.layer-1__modal {
+  display: none;
+  padding: 10px 20px;
+  background-color: #383838;
+  border-radius: 7px;
+  color: #fff;
+  position: absolute;
+  bottom: -5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 9;
+  width: 90px;
+  height: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 134%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.layer-1__modal::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 40px;
+  border-left: 1px solid #383838;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background: -o-linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
 }
 
 .layer-1__outer {
@@ -592,6 +642,53 @@ body {
   position: absolute;
 }
 
+.layer-2:hover .layer-2__modal {
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  display: block;
+}
+
+.layer-2__modal {
+  display: none;
+  padding: 10px 20px;
+  background-color: #383838;
+  border-radius: 7px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 9;
+  width: 90px;
+  height: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 134%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.layer-2__modal::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 40px;
+  border-left: 1px solid #383838;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background: -o-linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+}
+
 .layer-2__outer {
   -webkit-animation: xxx 3s linear 1 forwards;
           animation: xxx 3s linear 1 forwards;
@@ -623,6 +720,53 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+}
+
+.layer-3:hover .layer-3__modal {
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  display: block;
+}
+
+.layer-3__modal {
+  display: none;
+  padding: 10px 20px;
+  background-color: #383838;
+  border-radius: 7px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  right: 10px;
+  z-index: 9;
+  width: 90px;
+  height: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 134%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.layer-3__modal::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 40px;
+  border-left: 1px solid #383838;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background: -o-linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
 }
 
 .layer-3__outer {
@@ -658,6 +802,53 @@ body {
   position: absolute;
 }
 
+.layer-4:hover .layer-4__modal {
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  display: block;
+}
+
+.layer-4__modal {
+  display: none;
+  padding: 10px 20px;
+  background-color: #383838;
+  border-radius: 7px;
+  color: #fff;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 9;
+  width: 90px;
+  height: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 134%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.layer-4__modal::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 40px;
+  border-left: 1px solid #383838;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background: -o-linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+}
+
 .layer-4__outer {
   -webkit-animation: xxx4 3s linear 1 forwards;
           animation: xxx4 3s linear 1 forwards;
@@ -689,6 +880,56 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+}
+
+.layer-5:hover .layer-5__modal {
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  display: block;
+}
+
+.layer-5__modal {
+  display: none;
+  padding: 10px 20px;
+  background-color: #383838;
+  border-radius: 7px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 9;
+  width: 90px;
+  height: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 134%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.layer-5__modal::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 40px;
+  border-left: 1px solid #383838;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background: -o-linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, #383838 50%, rgba(255, 255, 255, 0) 50%);
 }
 
 .layer-5__outer {
